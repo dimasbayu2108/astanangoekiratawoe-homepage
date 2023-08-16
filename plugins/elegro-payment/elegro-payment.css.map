@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA;wBACyB;EACxB,OAAO,EAAE,MAAM;;;AAEhB;yDAC0D;EACzD,OAAO,EAAE,GAAG;;;AAGb;2CAC4C;EAC3C,YAAY,EAAE,YAAY;;;AAG3B,8DAA+D;EAC9D,aAAa,EAAE,YAAY",
-"sources": ["elegro-payment.scss"],
-"names": [],
-"file": "elegro-payment.css"
-}

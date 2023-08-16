@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAGA,yBAAoB;EACnB,kBAAkB;EAClB,sDAAuD;IACtD,OAAO,EAAE,KAAK;;;EAEf;8CAC6C;ICoK7C,QAAQ,EAAC,QAAQ;IAEhB,OAAO,EAHsC,CAAC;IAK/C,GAAG,EDvKe,IAAI;ICwKtB,KAAK,EDxKmB,IAAI;ICyK5B,MAAM,EDzKwB,IAAI;IC0KlC,IAAI,ED1KgC,IAAI;;;EAExC,kDAAmD;IAClD,cAAc,EAAE,GAAG",
-"sources": ["theme-hovers-responsive.scss","../../css/_mixins.scss"],
-"names": [],
-"file": "theme-hovers-responsive.css"
-}

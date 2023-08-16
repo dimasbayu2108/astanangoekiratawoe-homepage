@@ -1,8 +1,0 @@
-@import "../../css/_mixins.scss";
-@import "../../css/_theme-vars.scss";
-
-@media #{$media_sm} {
-    .post_layout_extra {
-        flex-direction: column !important;
-    }
-}
