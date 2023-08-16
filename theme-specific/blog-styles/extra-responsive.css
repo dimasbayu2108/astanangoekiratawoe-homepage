@@ -1,0 +1,7 @@
+@media (max-width: 767px) {
+  .post_layout_extra {
+    flex-direction: column !important;
+  }
+}
+
+/*# sourceMappingURL=extra-responsive.css.map */

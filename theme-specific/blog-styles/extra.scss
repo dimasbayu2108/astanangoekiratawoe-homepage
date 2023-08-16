@@ -1,0 +1,109 @@
+/* Blog layout: Excerpt 
+------------------------- */
+
+@import "../../css/_mixins.scss";
+@import "../../css/_theme-vars.scss";
+
+.post_layout_extra {
+	position:relative;
+	margin-bottom:0;
+	border: none !important;
+	padding: 0 !important;
+}
+.post_layout_extra.post_format_standard  {
+	display: flex;
+
+	& > div {
+		flex-grow: 1;
+	    flex-basis: 0;
+	}
+
+	.post_featured {
+		flex-grow: 1;
+		min-height: 15em;
+		padding: 3em 2.8em;
+	}
+}
+.post_layout_extra .label_sticky {
+	display: none;
+}
+.post_layout_extra + .post_layout_extra {
+	margin-top: 30px;
+}
+.post_layout_extra:not(.sticky) + .post_layout_extra:not(.sticky) {
+	border-top: 1px solid #eee;
+}
+.post_layout_extra.sticky {
+	padding: 3em;
+}
+.post_layout_extra .post_featured {
+	display: inline-block;
+	margin-bottom: 0;
+}
+.post_layout_extra .post_video_hover {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.post_layout_extra .post_video_hover:before {
+	font-size: 0.5em;
+}
+.post_layout_extra.post_format_audio .post_featured.without_thumb,
+.post_layout_extra.post_format_gallery .post_featured.without_thumb {
+	display:block;
+}
+.post_layout_extra .post_header {
+	margin: 0 0 1.1em 1.8em;
+	position:relative;
+}
+.post_layout_extra_quote blockquote {
+	margin: 0;
+}
+.post_layout_extra .post_header:before {
+    content: '';
+    font-family: $theme_icons;
+    font-size: 1.6em;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -1.1em;
+    width: 0.16em;
+    height: 100%;
+}
+.post_layout_extra .post_header .post_price {
+	width: auto;
+	@include abs-rt;
+	@include font(2.5em, 1.5em);
+}
+.post_layout_extra .post_texts {
+	padding: 3em 2.8em;
+}
+.post_layout_extra .post_title {
+	margin: 0;
+	font-size: 1.5rem;
+	line-height: initial;
+}
+.post_layout_extra .post_meta {
+	margin-top: 0;
+	font-size: 1rem;
+}
+.post_layout_extra .post_title + .post_meta {
+	margin-top: 2.55rem;
+}
+.post_layout_extra .post_header + .post_content {
+	    margin: 0 0 0 1.8em;
+}
+
+// First post large in the Classic and Masonry
+body[class*="blog_style_classic"] .post_layout_extra,
+body[class*="blog_style_masonry"] .post_layout_extra {
+	margin-bottom: 3em;
+}
+
+
+// home page switch
+.sc_blogger.sc_blogger_extra_default .sc_blogger_content > article:nth-child(2n) {
+	flex-direction: row-reverse;
+}

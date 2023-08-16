@@ -1,0 +1,93 @@
+/* Booked Appointments styles
+----------------------------------------------------------------- */
+
+@import "../../css/_mixins.scss";
+@import "../../css/_theme-vars.scss";
+
+/* Icons fix */
+.booked-icon {
+	padding-left: 1px;
+}
+
+/* Calendar */
+body table.booked-calendar,
+body table.booked-calendar thead,
+body table.booked-calendar body {
+	background-color: transparent !important;
+}
+table.booked-calendar,
+table.booked-calendar tr {
+	border-width: 0 !important;
+}
+table.booked-calendar tr th,
+table.booked-calendar tr td {
+	border-width: 1px !important;
+	border-style: solid !important;
+	background-color: transparent !important;
+	@include transition-properties(color, border-color, background-color);
+}
+table.booked-calendar tr td .date,
+table.booked-calendar tr td:hover .date,
+table.booked-calendar tr td:hover .date span,
+table.booked-calendar tr td.prev-date .date,
+table.booked-calendar tr td.prev-date:hover .date,
+table.booked-calendar tr td.prev-date:hover .date span,
+table.booked-calendar tr td.today .date,
+table.booked-calendar tr td.today .date span,
+table.booked-calendar tr td.prev-month .date,
+table.booked-calendar tr td.prev-month .date span,
+table.booked-calendar tr td.next-month .date,
+table.booked-calendar tr td.next-month .date span,
+table.booked-calendar tr td .booked-appt-list {
+	color: inherit !important;
+	background: transparent !important;
+}
+
+
+/* Booked form */
+body .booked-form .field .checkbox-radio-block label {
+	padding-left: 1.4em;
+}
+body .booked-form .field .checkbox-radio-block label:before {
+	line-height: 0.6em;
+}
+body .booked-form .cf-block select {
+	visibility: visible;
+}
+
+body .booked-modal .bm-window {
+	background: none;
+}
+
+/* Login form */
+#booked-page-form .login-remember input {
+	display: inline;
+	vertical-align:middle;
+}
+
+#booked-profile-page i.fa {
+	color: inherit;
+}
+
+/* User profile header */
+#booked-profile-page div.booked-profile-header {
+	padding: 0 0 2em;
+}
+#booked-profile-page div.booked-user-avatar {
+	@include box(50px, 50px);
+}
+#booked-profile-page div.booked-user-avatar img {
+	@include border-round;
+}
+#booked-profile-page .booked-user h3 strong {
+	font-weight:400;
+}
+
+/* User profile content */
+#booked-profile-page div.booked-tab-content {
+	@include border-sharp;
+}
+
+#profile-edit #booked-page-form .form-table {
+	margin-bottom: 2em;
+}
